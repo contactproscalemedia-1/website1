@@ -4,7 +4,9 @@ import { heroStats } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden px-5 pb-0 pt-[150px] sm:px-8 sm:pt-[170px] lg:px-14">
+    <section className="hero-stage relative flex min-h-screen flex-col justify-center overflow-hidden px-5 pb-0 pt-[150px] sm:px-8 sm:pt-[170px] lg:px-14">
+      <div className="site-grain" aria-hidden="true" />
+      <div className="hero-light" aria-hidden="true" />
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -22,7 +24,7 @@ export function Hero() {
         }}
       >
         <Image
-          src="/images/hero-city.webp"
+          src="/images/hero-higgsfield.png"
           alt=""
           fill
           priority
@@ -32,17 +34,17 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mb-6 inline-flex w-fit items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-brand sm:mb-8">
+      <div className="hero-kicker relative z-10 mb-6 inline-flex w-fit items-center gap-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/60 sm:mb-8">
         <span className="h-1 w-1 animate-pulse-dot rounded-full bg-brand motion-reduce:animate-none" />
         Performance Marketing for Luxury Brands
       </div>
 
-      <h1 className="relative z-10 mb-8 max-w-full font-display text-[clamp(48px,15vw,90px)] leading-[0.88] tracking-[0.02em] sm:mb-10 sm:max-w-[72%] sm:text-[clamp(64px,9.5vw,140px)]">
-        SCALE IS
+      <h1 className="hero-heading relative z-10 mb-8 max-w-full font-display text-[clamp(58px,16vw,96px)] leading-[0.82] tracking-[0.01em] sm:mb-10 sm:max-w-[74%] sm:text-[clamp(76px,10vw,154px)]">
+        <span>SCALE IS</span>
         <br />
-        A <span className="text-brand">NUMBER</span>.
+        <span>A <em className="not-italic text-brand">NUMBER</em>.</span>
         <br />
-        NOT AN ADJECTIVE.
+        <span>NOT AN ADJECTIVE.</span>
       </h1>
 
       <div className="relative z-10 max-w-[460px]">
@@ -57,13 +59,13 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
           <a
             href="#contact"
-            className="rounded-full bg-brand px-9 py-4 text-xs font-bold uppercase tracking-[0.15em] text-white no-underline transition-opacity hover:opacity-85"
+            className="luxury-button luxury-button--solid rounded-full bg-brand px-9 py-4 text-xs font-bold uppercase tracking-[0.15em] text-white no-underline"
           >
             Book a 15-Minute Call
           </a>
           <a
             href="#work"
-            className="rounded-full border border-white/25 px-9 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-white no-underline transition-colors hover:border-white"
+            className="luxury-button rounded-full border border-white/20 px-9 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-white no-underline"
           >
             See the Numbers
           </a>

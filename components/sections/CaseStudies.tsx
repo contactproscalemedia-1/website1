@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { caseStudies } from "@/lib/data";
 
-const AUTOPLAY_MS = 4000;
+const AUTOPLAY_MS = 6200;
 
 function getPos(cardIdx: number, active: number, total: number) {
   const diff = (cardIdx - active + total) % total;
@@ -17,8 +17,8 @@ function getPos(cardIdx: number, active: number, total: number) {
 
 const posStyles: Record<number, { x: number; scale: number; rotateY: number; opacity: number; z: number; filter: string }> = {
   1: { x: 0, scale: 1, rotateY: 0, opacity: 1, z: 3, filter: "brightness(1)" },
-  0: { x: -320, scale: 0.82, rotateY: 15, opacity: 0.55, z: 2, filter: "brightness(0.7)" },
-  2: { x: 320, scale: 0.82, rotateY: -15, opacity: 0.55, z: 2, filter: "brightness(0.7)" },
+  0: { x: -390, scale: 0.78, rotateY: 8, opacity: 0.38, z: 2, filter: "brightness(0.55)" },
+  2: { x: 390, scale: 0.78, rotateY: -8, opacity: 0.38, z: 2, filter: "brightness(0.55)" },
   3: { x: 0, scale: 0.5, rotateY: 0, opacity: 0, z: 1, filter: "brightness(1)" },
 };
 
@@ -41,7 +41,8 @@ export function CaseStudies() {
   }, [cur, paused, reduceMotion, update]);
 
   return (
-    <section id="work" className="cases-section bg-surface px-5 pb-16 pt-24 sm:px-8 sm:pt-32 lg:px-14 lg:pt-40">
+    <section id="work" className="cases-section relative overflow-hidden bg-surface px-5 pb-20 pt-24 sm:px-8 sm:pt-32 lg:px-14 lg:pt-40">
+      <div className="cases-index" aria-hidden="true">01 — 12</div>
       <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
         <span className="h-0.5 w-6 bg-brand" />
         Selected Work
@@ -62,7 +63,7 @@ export function CaseStudies() {
           ref={stageRef}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
-          className="relative flex h-[680px] flex-1 items-center justify-center"
+          className="case-stage relative flex h-[720px] flex-1 items-center justify-center"
           style={{ perspective: 1200 }}
         >
           {caseStudies.map((c, i) => {
@@ -92,25 +93,25 @@ export function CaseStudies() {
                 }}
                 transition={{ duration: reduceMotion ? 0 : 0.55, ease: [0.4, 0, 0.2, 1] }}
                 style={{ zIndex: style.z, pointerEvents: pos === 3 ? "none" : "auto" }}
-                className={`absolute w-[360px] overflow-hidden rounded-xl border bg-black backface-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
+                className={`case-card absolute w-[390px] overflow-hidden border bg-black backface-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
                   clickable ? "cursor-pointer" : ""
                 } ${
                   pos === 1
-                    ? "border-brand shadow-[0_20px_60px_rgba(232,21,42,0.2),0_0_0_1px_rgba(232,21,42,0.3)]"
+                    ? "border-white/20 shadow-[0_30px_100px_rgba(0,0,0,0.75)]"
                     : "border-white/10"
                 }`}
               >
-                <div className="aspect-square w-full overflow-hidden border-b-[3px] border-brand bg-[#0a0a0a]">
+                <div className="case-image aspect-square w-full overflow-hidden border-b border-white/10 bg-[#0a0a0a]">
                   <Image
                     src={c.img}
                     alt={c.alt}
                     width={360}
                     height={360}
-                    className="h-full w-full object-contain"
+                    className="h-full w-full object-contain transition-transform duration-700 hover:scale-[1.025]"
                   />
                 </div>
                 <div className="px-6 pb-6 pt-5">
-                  <span className="inline-block border border-[rgba(232,21,42,0.3)] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-brand">
+                  <span className="inline-block text-[9px] font-bold uppercase tracking-[0.2em] text-brand">
                     {c.tag}
                   </span>
                   <div className="my-2.5 font-display text-[28px] leading-none tracking-[0.02em] text-white">

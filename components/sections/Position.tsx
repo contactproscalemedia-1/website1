@@ -1,6 +1,7 @@
 export function Position() {
   return (
-    <section id="position" className="bg-white px-5 py-24 text-black sm:px-8 sm:py-32 lg:px-10 lg:py-[160px]">
+    <section id="position" className="position-editorial relative overflow-hidden bg-[#f2f1ed] px-5 py-24 text-black sm:px-8 sm:py-32 lg:px-10 lg:py-[180px]">
+      <div className="position-watermark" aria-hidden="true">POSITION</div>
       <div className="mx-auto grid max-w-[1360px] items-start gap-12 lg:grid-cols-[minmax(320px,480px)_minmax(0,720px)] lg:justify-between lg:gap-24">
         <div className="flex flex-col">
           <div className="mb-3 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">

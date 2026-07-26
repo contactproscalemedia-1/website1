@@ -39,7 +39,6 @@ export const metadata: Metadata = {
       "Performance marketing for luxury brands. Two founders. Real numbers. No exceptions.",
     url: siteUrl,
     siteName: "ProScaleMEDIA",
-    images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website",
   },
@@ -48,7 +47,6 @@ export const metadata: Metadata = {
     title: "ProScaleMEDIA: Dubai's Growth Agency",
     description:
       "Performance marketing for luxury brands. Two founders. Real numbers. No exceptions.",
-    images: ["/images/og-image.png"],
   },
 };
 

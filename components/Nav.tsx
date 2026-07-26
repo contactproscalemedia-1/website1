@@ -18,13 +18,13 @@ export function Nav() {
 
   return (
     <>
-      <nav className="fixed inset-x-0 top-[38px] z-[100] flex h-16 items-center justify-between border-b border-white/10 bg-black px-5 sm:top-[35px] sm:h-[76px] sm:px-8 lg:px-12">
+      <nav className="premium-nav fixed inset-x-0 top-[35px] z-[100] flex h-16 items-center justify-between border-b border-white/[0.08] px-5 sm:h-[76px] sm:px-8 lg:px-14">
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:text-brand"
+          className="group flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-white/70 transition-colors hover:text-white"
         >
           <span className="relative block h-3 w-5 shrink-0">
             <span
@@ -77,7 +77,7 @@ export function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed inset-0 z-[99] flex flex-col justify-center bg-black px-6 pt-[90px] sm:px-12"
+            className="menu-surface fixed inset-0 z-[99] flex flex-col justify-center bg-black px-6 pt-[90px] sm:px-12"
           >
             <ul className="flex flex-col gap-2">
               {navLinks.map((link, i) => (
@@ -90,7 +90,7 @@ export function Nav() {
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className={`block py-2 font-display text-[clamp(40px,9vw,88px)] leading-[1.05] tracking-[0.02em] no-underline transition-colors hover:text-brand ${
+                    className={`menu-link block py-1 font-display text-[clamp(48px,9vw,108px)] leading-[0.95] tracking-[0.01em] no-underline transition-colors hover:text-brand ${
                       link.active ? "text-brand" : "text-white"
                     }`}
                   >

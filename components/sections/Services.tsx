@@ -11,7 +11,7 @@ const spanClasses = [
 
 export function Services() {
   return (
-    <section id="services" className="px-5 py-24 sm:px-8 sm:py-32 lg:px-14 lg:py-40">
+    <section id="services" className="editorial-section px-5 py-24 sm:px-8 sm:py-32 lg:px-14 lg:py-40">
       <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
         <span className="h-0.5 w-6 bg-brand" />
         What We Build
@@ -20,18 +20,18 @@ export function Services() {
         WHAT WE <span className="text-brand">HANDLE</span>
       </h2>
 
-      <div className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-6">
+      <div className="services-editorial grid grid-cols-1 gap-px border-y border-white/10 bg-white/10 sm:grid-cols-6">
         {services.map((service, i) => (
           <div
             key={service.num}
-            className={`group relative flex flex-col overflow-hidden bg-black p-8 transition-colors duration-200 hover:bg-[#111111] sm:col-span-3 ${spanClasses[i]}`}
+            className={`service-panel group relative flex min-h-[340px] flex-col overflow-hidden bg-black p-8 transition-colors duration-500 hover:bg-[#0d0d0d] sm:col-span-3 sm:p-10 ${spanClasses[i]}`}
           >
-            <span className="mb-4 block font-display text-4xl leading-none text-[rgba(232,21,42,0.30)] transition-all duration-300 ease-out group-hover:scale-[1.07] group-hover:text-brand group-hover:[text-shadow:0_0_24px_rgba(232,21,42,0.65),0_0_48px_rgba(232,21,42,0.35)]">
+            <span className="mb-auto block font-display text-3xl leading-none text-white/20 transition-colors duration-500 group-hover:text-brand">
               {service.num}
             </span>
-            <div className="mb-3 text-[17px] font-bold text-white">{service.name}</div>
-            <div className="mb-5 text-[13px] leading-[1.75] text-muted">{service.desc}</div>
-            <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-brand transition-all duration-300 group-hover:w-full" />
+            <div className="mb-4 mt-16 font-display text-[32px] leading-none tracking-[0.03em] text-white">{service.name}</div>
+            <div className="max-w-md text-[13px] leading-[1.8] text-white/50">{service.desc}</div>
+            <span className="absolute bottom-0 left-0 h-px w-0 bg-brand transition-all duration-700 group-hover:w-full" />
           </div>
         ))}
       </div>

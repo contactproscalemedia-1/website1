@@ -15,12 +15,12 @@ export function Hero() {
         }}
       />
       <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[56%] overflow-hidden sm:block"
+        className="pointer-events-none absolute inset-0 z-0 hidden overflow-hidden sm:block"
         style={{
           maskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.92) 100%)",
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 36%, rgba(0,0,0,0.92) 72%, #000 100%)",
           WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.92) 100%)",
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 36%, rgba(0,0,0,0.92) 72%, #000 100%)",
         }}
       >
         <video
@@ -33,7 +33,7 @@ export function Hero() {
           poster="/images/hero-burj-khalifa.png"
           aria-hidden="true"
         >
-          <source src="/images/hero-burj-khalifa.mp4" type="video/mp4" />
+          <source src="/images/proscale-cinematic-gallery.mp4" type="video/mp4" />
         </video>
         <Image
           src="/images/hero-burj-khalifa.png"
@@ -46,12 +46,12 @@ export function Hero() {
         />
       </div>
 
-      <div className="hero-kicker relative z-10 mb-6 inline-flex w-fit items-center gap-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/60 sm:mb-8">
+      <div className="hero-kicker relative z-10 mb-7 inline-flex w-fit items-center gap-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/60">
         <span className="h-1 w-1 animate-pulse-dot rounded-full bg-brand motion-reduce:animate-none" />
-        Performance Marketing for Luxury Brands
+        Dubai / Performance Atelier / Est. 2021
       </div>
 
-      <h1 className="hero-heading relative z-10 mb-8 max-w-full font-display text-[clamp(58px,16vw,96px)] leading-[0.82] tracking-[0.01em] sm:mb-10 sm:max-w-[74%] sm:text-[clamp(76px,10vw,154px)]">
+      <h1 className="hero-heading relative z-10 mb-8 max-w-full font-display text-[clamp(58px,16vw,96px)] leading-[0.8] tracking-[-0.01em] sm:mb-10 sm:max-w-[78%] sm:text-[clamp(82px,10.3vw,166px)]">
         <span>SCALE IS</span>
         <br />
         <span>A <em className="not-italic text-brand">NUMBER</em>.</span>
@@ -59,7 +59,7 @@ export function Hero() {
         <span>NOT AN ADJECTIVE.</span>
       </h1>
 
-      <div className="relative z-10 max-w-[460px]">
+      <div className="relative z-10 ml-auto max-w-[540px] border-l border-white/15 pl-6 sm:mr-[3vw]">
         <p className="text-sm leading-[1.8] text-white/75">
           <strong className="font-semibold text-white">
             Two founders. Real numbers. No exceptions.
@@ -68,7 +68,7 @@ export function Hero() {
           We build systems that produce reservations, appointments, and qualified leads on a
           predictable weekly cadence. Not activity reports dressed up as strategy.
         </p>
-        <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
+        <div className="mt-7 flex flex-wrap items-center gap-4">
           <a
             href="#contact"
             className="luxury-button luxury-button--solid rounded-full bg-brand px-9 py-4 text-xs font-bold uppercase tracking-[0.15em] text-white no-underline"
@@ -84,7 +84,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mt-16 flex flex-col gap-8 border-t border-white/10 pt-6 sm:mt-20 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+      <div className="relative z-10 mt-14 flex flex-col gap-8 border-t border-white/10 pt-6 sm:mt-16 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
         <p className="max-w-md text-sm font-medium leading-snug tracking-[0.01em] text-white/50">
           Presence is what agencies sell when they can&apos;t sell results.
         </p>

@@ -43,7 +43,7 @@ export function Nav() {
               }`}
             />
           </span>
-          <span className="hidden sm:inline">{open ? "Close" : "Menu"}</span>
+          <span className="hidden sm:inline">{open ? "Close index" : "Explore"}</span>
         </button>
 
         <a
@@ -66,7 +66,7 @@ export function Nav() {
           href="#contact"
           className="rounded-full border border-white/25 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white no-underline transition-colors hover:border-brand hover:text-brand sm:px-6 sm:py-3"
         >
-          Book a Call
+          Private Consultation
         </a>
       </nav>
 

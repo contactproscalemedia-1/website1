@@ -1,63 +1,57 @@
 import { services } from "@/lib/data";
 import { ArrowRightIcon } from "@/components/icons";
 
-const spanClasses = [
-  "sm:col-span-3 lg:col-span-2",
-  "sm:col-span-3 lg:col-span-2",
-  "sm:col-span-6 lg:col-span-2",
-  "sm:col-span-3 lg:col-span-3",
-  "sm:col-span-3 lg:col-span-3",
-];
-
 export function Services() {
   return (
-    <section id="services" className="editorial-section px-5 py-24 sm:px-8 sm:py-32 lg:px-14 lg:py-40">
-      <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
-        <span className="h-0.5 w-6 bg-brand" />
-        What We Build
+    <section id="services" className="editorial-section px-5 py-28 sm:px-8 sm:py-36 lg:px-14 lg:py-48">
+      <div className="mb-16 grid gap-8 border-b border-white/10 pb-12 lg:grid-cols-[1fr_1.1fr] lg:items-end">
+        <div>
+          <div className="mb-5 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
+            <span className="h-px w-8 bg-brand" />
+            Capabilities / 01—05
+          </div>
+          <h2 className="font-display text-[clamp(58px,9vw,132px)] leading-[0.78] tracking-[-0.01em]">
+            BUILT TO
+            <br />
+            <span className="text-brand">COMPOUND.</span>
+          </h2>
+        </div>
+        <p className="max-w-xl text-[15px] leading-[1.8] text-white/48 lg:justify-self-end">
+          Strategy, creative, media and technology operated as one revenue system. No disconnected
+          retainers. No activity disguised as progress.
+        </p>
       </div>
-      <h2 className="mb-12 font-display text-[clamp(32px,13vw,60px)] leading-none tracking-[0.02em] sm:mb-16 sm:text-[clamp(48px,6vw,80px)]">
-        WHAT WE <span className="text-brand">HANDLE</span>
-      </h2>
 
-      <div className="services-editorial grid grid-cols-1 gap-px border-y border-white/10 bg-white/10 sm:grid-cols-6">
-        {services.map((service, i) => (
-          <div
+      <div className="service-index border-t border-white/10">
+        {services.map((service) => (
+          <article
             key={service.num}
-            className={`service-panel group relative flex min-h-[340px] flex-col overflow-hidden bg-black p-8 transition-colors duration-500 hover:bg-[#0d0d0d] sm:col-span-3 sm:p-10 ${spanClasses[i]}`}
+            className="service-row group grid gap-6 border-b border-white/10 py-8 transition-colors duration-500 sm:grid-cols-[80px_1fr] lg:grid-cols-[100px_minmax(260px,.8fr)_1.2fr_40px] lg:items-center lg:py-11"
           >
-            <span className="mb-auto block font-display text-3xl leading-none text-white/20 transition-colors duration-500 group-hover:text-brand">
+            <span className="font-display text-2xl text-white/22 transition-colors duration-500 group-hover:text-brand">
               {service.num}
             </span>
-            <div className="mb-4 mt-16 font-display text-[32px] leading-none tracking-[0.03em] text-white">{service.name}</div>
-            <div className="max-w-md text-[13px] leading-[1.8] text-white/50">{service.desc}</div>
-            <span className="absolute bottom-0 left-0 h-px w-0 bg-brand transition-all duration-700 group-hover:w-full" />
-          </div>
+            <h3 className="font-display text-[clamp(32px,4vw,58px)] leading-none tracking-[0.02em] text-white">
+              {service.name}
+            </h3>
+            <p className="max-w-2xl text-[13px] leading-[1.8] text-white/45 transition-colors duration-500 group-hover:text-white/65 sm:col-start-2 lg:col-start-auto">
+              {service.desc}
+            </p>
+            <span className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/15 transition-all duration-500 group-hover:rotate-45 group-hover:border-brand group-hover:bg-brand lg:flex">
+              <ArrowRightIcon className="h-4 w-4" />
+            </span>
+          </article>
         ))}
       </div>
 
-      <div className="mt-14 flex justify-center sm:mt-16">
-        <div className="services-cta-card relative flex w-full max-w-[1040px] flex-col items-start gap-6 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[rgba(232,21,42,0.05)] to-transparent p-8 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-12">
-          <div className="relative z-10">
-            <div className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em] text-white/50">
-              <span className="cta-dot-pulse relative h-[6px] w-[6px] shrink-0 rounded-full bg-brand" />
-              The Complete Stack
-            </div>
-            <div className="max-w-[480px] font-display text-[clamp(20px,7vw,28px)] leading-[1.15] tracking-[0.01em] text-white sm:text-[clamp(24px,3vw,34px)]">
-              Five Services. <span className="text-brand">One Engine.</span>
-            </div>
-          </div>
-
-          <a
-            href="/services"
-            className="relative z-10 flex w-full shrink-0 items-center justify-between gap-3.5 rounded-full border border-white/25 py-4 pl-8 pr-3.5 text-xs font-bold uppercase tracking-[0.15em] text-white no-underline transition-colors duration-300 hover:border-brand sm:w-auto"
-          >
-            See All Services
-            <span className="relative flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-brand transition-transform duration-300 ease-out group-hover:rotate-45">
-              <ArrowRightIcon className="h-4 w-4 stroke-white" />
-            </span>
-          </a>
+      <div className="mt-14 flex flex-col gap-6 border-l border-brand pl-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-white/35">One accountable system</p>
+          <p className="font-display text-3xl tracking-[0.02em]">FIVE DISCIPLINES. ONE STANDARD.</p>
         </div>
+        <a href="#contact" className="luxury-button w-fit rounded-full border border-white/20 px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em]">
+          Discuss the mandate
+        </a>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 export function Position() {
   return (
     <section id="position" className="position-editorial relative overflow-hidden bg-[#f2f1ed] px-5 py-24 text-black sm:px-8 sm:py-32 lg:px-10 lg:py-[180px]">
-      <div className="position-watermark" aria-hidden="true">POSITION</div>
+      <div className="position-watermark" aria-hidden="true">STANDARD</div>
       <div className="mx-auto grid max-w-[1360px] items-start gap-12 lg:grid-cols-[minmax(320px,480px)_minmax(0,720px)] lg:justify-between lg:gap-24">
         <div className="flex flex-col">
           <div className="mb-3 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
@@ -11,12 +11,12 @@ export function Position() {
           <h2 className="mb-8 font-display text-[clamp(32px,13vw,60px)] leading-none tracking-[0.02em] text-black sm:text-[clamp(48px,6vw,80px)]">
             WE BELIEVE<span className="text-brand">.</span>
           </h2>
-          <div className="font-display text-[clamp(32px,10vw,52px)] leading-[1] tracking-[0.02em] text-black sm:text-[clamp(48px,5vw,80px)]">
-            MARKETING
+          <div className="font-display text-[clamp(42px,10vw,64px)] leading-[.9] tracking-[0.01em] text-black sm:text-[clamp(58px,6vw,92px)]">
+            RESTRAINT
             <br />
-            THAT RESPECTS
+            EARNS
             <br />
-            THE <span className="text-brand">NUMBERS.</span>
+            <span className="text-brand">ATTENTION.</span>
           </div>
         </div>
         <div>

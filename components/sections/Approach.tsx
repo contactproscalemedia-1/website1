@@ -7,7 +7,7 @@ export function Approach() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="approach" className="bg-[#050505] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+    <section id="approach" className="bg-[#050505] px-5 py-24 sm:px-8 sm:py-32 lg:px-14 lg:py-40">
       <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
         <span className="h-0.5 w-6 bg-brand" />
         How We Work
@@ -27,7 +27,7 @@ export function Approach() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6, delay: reduceMotion ? 0 : i * 0.1 }}
-            className="group relative border border-[#1a1a1a] bg-black transition-colors hover:border-[#2a2a2a]"
+            className="group relative rounded-xl border border-[#1a1a1a] bg-black transition-colors hover:border-[#2a2a2a]"
           >
             {i < protocolSteps.length - 1 && (
               <span className="protocol-arrow absolute left-full top-1/2 z-10 hidden h-[54px] w-[68px] -translate-y-1/2 lg:block" />
@@ -48,7 +48,7 @@ export function Approach() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
-        className="border-l-[3px] border-brand bg-[rgba(232,21,42,0.03)] px-6 py-10 sm:px-12"
+        className="rounded-r-xl border-l-[3px] border-brand bg-[rgba(232,21,42,0.03)] px-6 py-10 sm:px-12 sm:py-12"
       >
         <div className="mb-4 font-display text-[clamp(18px,6vw,26px)] leading-[1.3] text-white sm:text-[clamp(22px,2.5vw,32px)]">
           &quot;Most agencies ship first and think later. We think first. The wrong message never

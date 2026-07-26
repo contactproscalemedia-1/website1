@@ -11,28 +11,28 @@ export function ContactCTA() {
         className="cta-bg-grid pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 110%, rgba(232,21,42,0.55) 0%, rgba(232,21,42,0.2) 35%, transparent 70%)",
+            "radial-gradient(ellipse 70% 60% at 50% 110%, rgba(232,21,42,0.35) 0%, rgba(232,21,42,0.12) 35%, transparent 70%)",
         }}
         aria-hidden="true"
       />
       <CtaParticles />
 
       <div className="relative z-[2] mx-auto max-w-3xl">
-        <div className="cta-badge mb-8 inline-flex items-center gap-2 border border-[rgba(232,21,42,0.4)] px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
-          <span className="h-[7px] w-[7px] animate-pulse-dot rounded-full bg-brand motion-reduce:animate-none" />
+        <div className="cta-badge mb-8 inline-flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-brand">
+          <span className="h-1 w-1 animate-pulse-dot rounded-full bg-brand motion-reduce:animate-none" />
           Limited Spots Available
         </div>
-        <h2 className="mb-7 font-display text-[clamp(56px,16vw,100px)] leading-[0.88] tracking-[0.02em] text-white sm:text-[clamp(80px,12vw,160px)]">
+        <h2 className="mb-8 font-display text-[clamp(56px,16vw,100px)] leading-[0.88] tracking-[0.02em] text-white sm:text-[clamp(80px,12vw,160px)]">
           READY TO
           <br />
           <span
-            className="cta-title-red block"
+            className="block"
             style={{ color: "transparent", WebkitTextStroke: "3px #e8152a" }}
           >
             SCALE?
           </span>
         </h2>
-        <p className="mb-10 text-base leading-[1.8] text-muted sm:mb-12">
+        <p className="mb-12 text-base leading-[1.8] text-muted sm:mb-14">
           We take four clients a quarter. Not more.
           <br className="hidden sm:block" /> If we&apos;re a fit, our calendar is here.
         </p>

@@ -6,7 +6,7 @@ import { footerCompanyLinks, footerServiceLinks } from "@/lib/data";
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-black">
-      <div className="grid grid-cols-1 gap-10 border-b border-[#1a1a1a] px-5 py-10 sm:px-8 sm:py-14 lg:grid-cols-[1.5fr_1fr] lg:gap-16 lg:px-12">
+      <div className="grid grid-cols-1 gap-10 border-b border-[#1a1a1a] px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.5fr_1fr] lg:gap-16 lg:px-14">
         <div>
           <div className="mb-5 flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-brand">
             <span className="h-0.5 w-6 bg-brand" />
@@ -24,7 +24,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-10 px-5 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16 lg:px-12 lg:py-16">
+      <div className="grid grid-cols-1 gap-10 px-5 py-16 sm:grid-cols-2 sm:px-8 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16 lg:px-14 lg:py-20">
         <div>
           <a href="#">
             <Image
@@ -45,21 +45,21 @@ export function Footer() {
             <a
               href="#"
               aria-label="Instagram"
-              className="flex h-11 w-11 items-center justify-center border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
             >
               <InstagramIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="#"
               aria-label="LinkedIn"
-              className="flex h-11 w-11 items-center justify-center border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
             >
               <LinkedInIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="https://wa.me/971000000000"
               aria-label="WhatsApp"
-              className="flex h-11 w-11 items-center justify-center border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-muted no-underline transition-colors hover:border-brand hover:text-brand"
             >
               <WhatsAppIcon className="h-[18px] w-[18px]" />
             </a>

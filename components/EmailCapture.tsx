@@ -31,7 +31,7 @@ export function EmailCapture() {
 
   return (
     <div className="flex flex-col gap-2.5">
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col overflow-hidden rounded-2xl sm:flex-row sm:rounded-full">
         <Input
           type="email"
           placeholder="your@email.com"

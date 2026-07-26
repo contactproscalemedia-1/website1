@@ -41,7 +41,7 @@ export function CaseStudies() {
   }, [cur, paused, reduceMotion, update]);
 
   return (
-    <section id="work" className="cases-section bg-surface px-5 pb-12 pt-20 sm:px-8 sm:pt-24 lg:px-12 lg:pt-28">
+    <section id="work" className="cases-section bg-surface px-5 pb-16 pt-24 sm:px-8 sm:pt-32 lg:px-14 lg:pt-40">
       <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
         <span className="h-0.5 w-6 bg-brand" />
         Selected Work
@@ -92,7 +92,7 @@ export function CaseStudies() {
                 }}
                 transition={{ duration: reduceMotion ? 0 : 0.55, ease: [0.4, 0, 0.2, 1] }}
                 style={{ zIndex: style.z, pointerEvents: pos === 3 ? "none" : "auto" }}
-                className={`absolute w-[360px] overflow-hidden rounded-md border bg-black backface-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
+                className={`absolute w-[360px] overflow-hidden rounded-xl border bg-black backface-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
                   clickable ? "cursor-pointer" : ""
                 } ${
                   pos === 1
@@ -159,7 +159,7 @@ export function CaseStudies() {
         {caseStudies.map((c) => (
           <article
             key={c.name + c.desc}
-            className="w-[85vw] shrink-0 snap-center overflow-hidden rounded-md border border-white/10 bg-black sm:w-[420px]"
+            className="w-[85vw] shrink-0 snap-center overflow-hidden rounded-xl border border-white/10 bg-black sm:w-[420px]"
           >
             <div className="aspect-square w-full overflow-hidden border-b-[3px] border-brand bg-[#0a0a0a]">
               <Image
@@ -193,7 +193,7 @@ export function CaseStudies() {
         ))}
       </div>
 
-      <div className="mt-4 flex flex-col items-start gap-8 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:gap-12">
+      <div className="mt-16 flex flex-col items-start gap-8 border-t border-white/10 pt-10 sm:mt-20 sm:flex-row sm:items-center sm:gap-12">
         <div className="flex-1">
           <div className="mb-2.5 font-display text-3xl text-white sm:text-4xl">Want to See More?</div>
           <div className="text-sm leading-[1.7] text-muted sm:text-[15px]">
@@ -203,11 +203,11 @@ export function CaseStudies() {
             Numbers we can point to, in every category.
           </div>
         </div>
-        <div className="hidden h-24 w-[3px] shrink-0 bg-white/10 sm:block" />
+        <div className="hidden h-24 w-px shrink-0 bg-white/10 sm:block" />
         <div className="flex w-full shrink-0 items-center justify-center sm:w-auto">
           <a
             href="#contact"
-            className="w-full bg-brand px-8 py-3.5 text-center text-xs font-bold uppercase tracking-[0.1em] text-white no-underline transition-opacity hover:opacity-85 sm:w-auto"
+            className="w-full rounded-full bg-brand px-9 py-4 text-center text-xs font-bold uppercase tracking-[0.15em] text-white no-underline transition-opacity hover:opacity-85 sm:w-auto"
           >
             Discover More Case Studies →
           </a>

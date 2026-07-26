@@ -11,7 +11,7 @@ const spanClasses = [
 
 export function Services() {
   return (
-    <section id="services" className="px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+    <section id="services" className="px-5 py-24 sm:px-8 sm:py-32 lg:px-14 lg:py-40">
       <div className="mb-4 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
         <span className="h-0.5 w-6 bg-brand" />
         What We Build
@@ -36,38 +36,24 @@ export function Services() {
         ))}
       </div>
 
-      <div className="mt-10 flex justify-center sm:mt-12">
-        <div className="services-cta-card relative flex w-full max-w-[1040px] flex-col items-start gap-6 overflow-hidden border border-white/10 bg-gradient-to-br from-[rgba(232,21,42,0.06)] to-transparent p-7 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-11">
-          <div className="cta-scan pointer-events-none absolute inset-0 z-0 overflow-hidden" />
-          <div className="cta-particles pointer-events-none absolute inset-0 z-0 overflow-hidden">
-            {[8, 22, 38, 55, 70, 85, 95].map((left, i) => (
-              <span
-                key={left}
-                className="cta-particle"
-                style={{ left: `${left}%`, animationDelay: `${[0, 1.1, 2.3, 0.6, 3.1, 1.8, 4][i]}s` }}
-              />
-            ))}
-          </div>
-
+      <div className="mt-14 flex justify-center sm:mt-16">
+        <div className="services-cta-card relative flex w-full max-w-[1040px] flex-col items-start gap-6 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[rgba(232,21,42,0.05)] to-transparent p-8 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-12">
           <div className="relative z-10">
-            <div className="mb-2.5 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-white/55">
-              <span className="cta-dot-pulse relative h-[7px] w-[7px] shrink-0 rounded-full bg-brand" />
+            <div className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em] text-white/50">
+              <span className="cta-dot-pulse relative h-[6px] w-[6px] shrink-0 rounded-full bg-brand" />
               The Complete Stack
             </div>
             <div className="max-w-[480px] font-display text-[clamp(20px,7vw,28px)] leading-[1.15] tracking-[0.01em] text-white sm:text-[clamp(24px,3vw,34px)]">
-              Five Services.{" "}
-              <span className="glitch-text" data-text="One Engine.">
-                One Engine.
-              </span>
+              Five Services. <span className="text-brand">One Engine.</span>
             </div>
           </div>
 
           <a
             href="/services"
-            className="relative z-10 flex w-full shrink-0 items-center justify-between gap-3.5 border border-white/25 py-4 pl-7 pr-3.5 text-xs font-bold uppercase tracking-[0.1em] text-white no-underline transition-[border-color,box-shadow] duration-300 hover:border-brand hover:shadow-[0_0_28px_rgba(232,21,42,0.35)] sm:w-auto"
+            className="relative z-10 flex w-full shrink-0 items-center justify-between gap-3.5 rounded-full border border-white/25 py-4 pl-8 pr-3.5 text-xs font-bold uppercase tracking-[0.15em] text-white no-underline transition-colors duration-300 hover:border-brand sm:w-auto"
           >
             See All Services
-            <span className="cta-link-icon relative flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-brand transition-transform duration-300 ease-out group-hover:rotate-45">
+            <span className="relative flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-brand transition-transform duration-300 ease-out group-hover:rotate-45">
               <ArrowRightIcon className="h-4 w-4 stroke-white" />
             </span>
           </a>

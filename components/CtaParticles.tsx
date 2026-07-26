@@ -11,7 +11,7 @@ type Particle = {
   delay: number;
 };
 
-export function CtaParticles({ count = 35 }: { count?: number }) {
+export function CtaParticles({ count = 16 }: { count?: number }) {
   const reduceMotion = useReducedMotion();
   const [particles, setParticles] = useState<Particle[]>([]);
 

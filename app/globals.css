@@ -249,6 +249,50 @@ body {
   background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.38) 60%, rgba(0,0,0,.15) 100%);
 }
 
+.hero-stage--editorial {
+  background: #f0eee9;
+  color: #080808;
+}
+.hero-stage--editorial::after {
+  background: linear-gradient(90deg, #f0eee9 0%, rgba(240,238,233,.98) 46%, rgba(240,238,233,.18) 69%, rgba(0,0,0,.08) 100%);
+}
+.hero-stage--editorial .hero-kicker,
+.hero-stage--editorial .hero-copy p,
+.hero-stage--editorial .hero-copy strong,
+.hero-stage--editorial > div > p {
+  color: rgba(8,8,8,.62);
+}
+.hero-stage--editorial .hero-copy strong { color: #080808; }
+.hero-stage--editorial .hero-copy .luxury-button:not(.luxury-button--solid) {
+  color: #080808;
+  border-color: rgba(0,0,0,.25);
+}
+.hero-stage--editorial .hero-copy .luxury-button:not(.luxury-button--solid):hover {
+  border-color: #080808;
+}
+.hero-stage--editorial > div[class*="border-t"] {
+  border-color: rgba(0,0,0,.14);
+}
+.hero-stage--editorial > div[class*="border-t"] p,
+.hero-stage--editorial > div[class*="border-t"] div {
+  color: rgba(0,0,0,.55);
+}
+.hero-stage--editorial > div[class*="border-t"] [class*="text-brand"] { color: #e8152a; }
+.hero-film-frame {
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 35px 100px rgba(0,0,0,.22);
+}
+.hero-film-frame::before {
+  content: "PROSCALE / MOTION STUDY 001";
+  position: absolute;
+  z-index: 10;
+  top: 18px;
+  left: 18px;
+  color: rgba(255,255,255,.58);
+  font-size: 8px;
+  letter-spacing: .22em;
+}
+
 .hero-light {
   position: absolute;
   top: 10%;
@@ -403,6 +447,9 @@ body {
   line-height: .7;
   letter-spacing: -.02em;
   white-space: nowrap;
+}
+.position-red .position-watermark {
+  -webkit-text-stroke-color: rgba(0,0,0,.14);
 }
 .position-editorial > *:not(.position-watermark) { position: relative; z-index: 1; }
 .protocol-section {

@@ -4,7 +4,7 @@ import { heroStats } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="hero-stage relative flex min-h-screen flex-col justify-center overflow-hidden px-5 pb-0 pt-[150px] sm:px-8 sm:pt-[170px] lg:px-14">
+    <section className="hero-stage hero-stage--editorial relative flex min-h-screen flex-col justify-center overflow-hidden px-5 pb-0 pt-[150px] sm:px-8 sm:pt-[170px] lg:px-14">
       <div className="site-grain" aria-hidden="true" />
       <div className="hero-light" aria-hidden="true" />
       <div
@@ -15,12 +15,10 @@ export function Hero() {
         }}
       />
       <div
-        className="pointer-events-none absolute inset-0 z-0 hidden overflow-hidden sm:block"
+        className="hero-film-frame pointer-events-none absolute bottom-[9%] right-[3.5%] top-[17%] z-0 hidden w-[43%] overflow-hidden sm:block"
         style={{
-          maskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 36%, rgba(0,0,0,0.92) 72%, #000 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 36%, rgba(0,0,0,0.92) 72%, #000 100%)",
+          maskImage: "none",
+          WebkitMaskImage: "none",
         }}
       >
         <video
@@ -51,7 +49,7 @@ export function Hero() {
         Dubai / Performance Atelier / Est. 2021
       </div>
 
-      <h1 className="hero-heading relative z-10 mb-8 max-w-full font-display text-[clamp(58px,16vw,96px)] leading-[0.8] tracking-[-0.01em] sm:mb-10 sm:max-w-[78%] sm:text-[clamp(82px,10.3vw,166px)]">
+      <h1 className="hero-heading relative z-10 mb-8 max-w-full font-display text-[clamp(58px,16vw,96px)] leading-[0.8] tracking-[-0.01em] sm:mb-10 sm:max-w-[61%] sm:text-[clamp(82px,9vw,146px)]">
         <span>SCALE IS</span>
         <br />
         <span>A <em className="not-italic text-brand">NUMBER</em>.</span>
@@ -59,7 +57,7 @@ export function Hero() {
         <span>NOT AN ADJECTIVE.</span>
       </h1>
 
-      <div className="relative z-10 ml-auto max-w-[540px] border-l border-white/15 pl-6 sm:mr-[3vw]">
+      <div className="hero-copy relative z-10 max-w-[470px] border-l border-black/20 pl-6">
         <p className="text-sm leading-[1.8] text-white/75">
           <strong className="font-semibold text-white">
             Two founders. Real numbers. No exceptions.

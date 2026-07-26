@@ -23,13 +23,25 @@ export function Hero() {
             "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.92) 100%)",
         }}
       >
+        <video
+          className="hero-film absolute inset-0 h-full w-full object-cover opacity-90"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hero-burj-khalifa.png"
+          aria-hidden="true"
+        >
+          <source src="/images/hero-burj-khalifa.mp4" type="video/mp4" />
+        </video>
         <Image
-          src="/images/hero-higgsfield.png"
+          src="/images/hero-burj-khalifa.png"
           alt=""
           fill
           priority
           sizes="56vw"
-          className="object-cover opacity-90"
+          className="hero-film-fallback object-cover opacity-90"
           style={{ objectPosition: "center 75%" }}
         />
       </div>

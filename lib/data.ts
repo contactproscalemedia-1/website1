@@ -7,15 +7,15 @@ export const navLinks = [
 ];
 
 export const tickerLogos = [
-  { src: "/images/logos/esthetic-dubai.png", alt: "Esthetic Dubai" },
-  { src: "/images/logos/kabana.png", alt: "Kabana" },
-  { src: "/images/logos/binous-gym.png", alt: "Binous Gym" },
-  { src: "/images/logos/tickmill.png", alt: "Tickmill" },
-  { src: "/images/logos/licorne-realestate.png", alt: "Licorne Realestate" },
-  { src: "/images/logos/supremefx.png", alt: "SupremeFX" },
-  { src: "/images/logos/dubai-muscle-show.png", alt: "Dubai Muscle Show" },
-  { src: "/images/logos/handel-education.png", alt: "Handel Education" },
-  { src: "/images/logos/tadawol.png", alt: "Tadawol" },
+  { src: "/images/brand/client-logos/esthetic-dubai.png", alt: "Esthetic Dubai" },
+  { src: "/images/brand/client-logos/kabana.png", alt: "Kabana" },
+  { src: "/images/brand/client-logos/binous-gym.png", alt: "Binous Gym" },
+  { src: "/images/brand/client-logos/tickmill.png", alt: "Tickmill" },
+  { src: "/images/brand/client-logos/licorne-realestate.png", alt: "Licorne Realestate" },
+  { src: "/images/brand/client-logos/supremefx.png", alt: "SupremeFX" },
+  { src: "/images/brand/client-logos/dubai-muscle-show.png", alt: "Dubai Muscle Show" },
+  { src: "/images/brand/client-logos/handel-education.png", alt: "Handel Education" },
+  { src: "/images/brand/client-logos/tadawol.png", alt: "Tadawol" },
 ];
 
 export const heroStats = [
@@ -64,7 +64,7 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    img: "/images/cases/realnadirfx.png",
+    img: "/images/case-studies/real-nadir-fx/cover.png",
     alt: "@RealNadirFX",
     tag: "Personal Brand · Finance · Dubai",
     name: "@RealNadirFX",
@@ -75,7 +75,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/kabana-restaurant.png",
+    img: "/images/case-studies/kabana/restaurant.png",
     alt: "@Kabana Restaurant",
     tag: "Website · Restaurant · Dubai",
     name: "@Kabana Restaurant",
@@ -86,7 +86,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/esthetic-dubai-branding.png",
+    img: "/images/case-studies/esthetic-dubai/branding.png",
     alt: "Esthetic Dubai: Branding",
     tag: "Branding · Dental Clinic · Dubai",
     name: "@Esthetic Dubai",
@@ -97,7 +97,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/mohammed-ben-rjab.png",
+    img: "/images/case-studies/mohammed-ben-rjab/cover.png",
     alt: "@Mohammed Ben Rjab",
     tag: "Event Promotion · Finance · Tunisia",
     name: "@Mohammed Ben Rjab",
@@ -108,7 +108,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/handel-education.png",
+    img: "/images/case-studies/handel-education/cover.png",
     alt: "@Handel Education",
     tag: "Lead Generation · Education · Morocco",
     name: "@Handel Education",
@@ -119,7 +119,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/binousgym.png",
+    img: "/images/case-studies/binous-gym/cover.png",
     alt: "@BinousGym",
     tag: "YouTube Growth · Fitness · Dubai",
     name: "@BinousGym",
@@ -130,7 +130,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/michafit.png",
+    img: "/images/case-studies/micha-fit/cover.png",
     alt: "@MichaFit",
     tag: "Personal Brand · Fitness · UAE",
     name: "@MichaFit",
@@ -141,7 +141,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/esthetic-dubai-website.png",
+    img: "/images/case-studies/esthetic-dubai/website.png",
     alt: "Esthetic Dubai: Website",
     tag: "Website · Dental Clinic · Dubai",
     name: "@Esthetic Dubai",
@@ -152,7 +152,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/kabana-branding.png",
+    img: "/images/case-studies/kabana/branding.png",
     alt: "@Kabana Restaurant: Branding",
     tag: "Branding · Restaurant · Dubai",
     name: "@Kabana Restaurant",
@@ -163,7 +163,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/chohaibb.png",
+    img: "/images/case-studies/chohaibb/cover.png",
     alt: "@Chohaibb",
     tag: "Account Recovery · Personal Brand",
     name: "@Chohaibb",
@@ -174,7 +174,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/kabana-meta-ads.png",
+    img: "/images/case-studies/kabana/meta-ads.png",
     alt: "@Kabana: Meta Ads",
     tag: "Paid Ads · Restaurant · Dubai",
     name: "@Kabana Restaurant",
@@ -185,7 +185,7 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    img: "/images/cases/rifino-world.png",
+    img: "/images/case-studies/rifino-world/cover.png",
     alt: "@Rifino World",
     tag: "YouTube Growth · Lifestyle · UAE",
     name: "@Rifino World",

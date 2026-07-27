@@ -52,7 +52,7 @@ export function Nav() {
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <Image
-            src="/images/proscalemedia-logo.png"
+            src="/images/brand/proscalemedia-logo.png"
             alt="ProScaleMEDIA"
             height={44}
             width={165}

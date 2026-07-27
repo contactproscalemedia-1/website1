@@ -28,7 +28,7 @@ export function Footer() {
         <div>
           <a href="#">
             <Image
-              src="/images/proscalemedia-logo.png"
+              src="/images/brand/proscalemedia-logo.png"
               alt="ProScaleMEDIA"
               width={165}
               height={44}

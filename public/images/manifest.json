@@ -2,141 +2,141 @@
   "note": "Assets extracted from the original mockup's inline base64 data. Swap any entry with a Higgsfield-generated or client-supplied asset later without touching component code. Paths are referenced from lib/data.ts.",
   "assets": [
     {
-      "path": "/images/proscalemedia-logo.png",
+      "path": "/images/brand/proscalemedia-logo.png",
       "usedIn": ["Nav", "Footer"],
       "alt": "ProScaleMEDIA",
       "status": "final",
       "source": "original mockup"
     },
     {
-      "path": "/images/hero-city.webp",
+      "path": "/images/archive/old-homepage/hero-city.webp",
       "usedIn": ["Hero"],
       "alt": "Dubai skyline background",
       "status": "final",
       "source": "original mockup"
     },
     {
-      "path": "/images/logos/esthetic-dubai.png",
+      "path": "/images/brand/client-logos/esthetic-dubai.png",
       "usedIn": ["LogoTicker"],
       "alt": "Esthetic Dubai",
       "status": "final"
     },
     {
-      "path": "/images/logos/kabana.png",
+      "path": "/images/brand/client-logos/kabana.png",
       "usedIn": ["LogoTicker"],
       "alt": "Kabana",
       "status": "final"
     },
     {
-      "path": "/images/logos/binous-gym.png",
+      "path": "/images/brand/client-logos/binous-gym.png",
       "usedIn": ["LogoTicker"],
       "alt": "Binous Gym",
       "status": "final"
     },
     {
-      "path": "/images/logos/tickmill.png",
+      "path": "/images/brand/client-logos/tickmill.png",
       "usedIn": ["LogoTicker"],
       "alt": "Tickmill",
       "status": "final"
     },
     {
-      "path": "/images/logos/licorne-realestate.png",
+      "path": "/images/brand/client-logos/licorne-realestate.png",
       "usedIn": ["LogoTicker"],
       "alt": "Licorne Realestate",
       "status": "final"
     },
     {
-      "path": "/images/logos/supremefx.png",
+      "path": "/images/brand/client-logos/supremefx.png",
       "usedIn": ["LogoTicker"],
       "alt": "SupremeFX",
       "status": "final"
     },
     {
-      "path": "/images/logos/dubai-muscle-show.png",
+      "path": "/images/brand/client-logos/dubai-muscle-show.png",
       "usedIn": ["LogoTicker"],
       "alt": "Dubai Muscle Show",
       "status": "final"
     },
     {
-      "path": "/images/logos/handel-education.png",
+      "path": "/images/brand/client-logos/handel-education.png",
       "usedIn": ["LogoTicker"],
       "alt": "Handel Education",
       "status": "final"
     },
     {
-      "path": "/images/logos/tadawol.png",
+      "path": "/images/brand/client-logos/tadawol.png",
       "usedIn": ["LogoTicker"],
       "alt": "Tadawol",
       "status": "final"
     },
     {
-      "path": "/images/cases/realnadirfx.png",
+      "path": "/images/case-studies/real-nadir-fx/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@RealNadirFX",
       "status": "final"
     },
     {
-      "path": "/images/cases/kabana-restaurant.png",
+      "path": "/images/case-studies/kabana/restaurant.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Kabana Restaurant",
       "status": "final"
     },
     {
-      "path": "/images/cases/esthetic-dubai-branding.png",
+      "path": "/images/case-studies/esthetic-dubai/branding.png",
       "usedIn": ["CaseStudies"],
       "alt": "Esthetic Dubai: Branding",
       "status": "final"
     },
     {
-      "path": "/images/cases/mohammed-ben-rjab.png",
+      "path": "/images/case-studies/mohammed-ben-rjab/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Mohammed Ben Rjab",
       "status": "final"
     },
     {
-      "path": "/images/cases/handel-education.png",
+      "path": "/images/case-studies/handel-education/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Handel Education",
       "status": "final"
     },
     {
-      "path": "/images/cases/binousgym.png",
+      "path": "/images/case-studies/binous-gym/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@BinousGym",
       "status": "final"
     },
     {
-      "path": "/images/cases/michafit.png",
+      "path": "/images/case-studies/micha-fit/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@MichaFit",
       "status": "final"
     },
     {
-      "path": "/images/cases/esthetic-dubai-website.png",
+      "path": "/images/case-studies/esthetic-dubai/website.png",
       "usedIn": ["CaseStudies"],
       "alt": "Esthetic Dubai: Website",
       "status": "final"
     },
     {
-      "path": "/images/cases/kabana-branding.png",
+      "path": "/images/case-studies/kabana/branding.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Kabana Restaurant: Branding",
       "status": "final"
     },
     {
-      "path": "/images/cases/chohaibb.png",
+      "path": "/images/case-studies/chohaibb/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Chohaibb",
       "status": "final"
     },
     {
-      "path": "/images/cases/kabana-meta-ads.png",
+      "path": "/images/case-studies/kabana/meta-ads.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Kabana: Meta Ads",
       "status": "final"
     },
     {
-      "path": "/images/cases/rifino-world.png",
+      "path": "/images/case-studies/rifino-world/cover.png",
       "usedIn": ["CaseStudies"],
       "alt": "@Rifino World",
       "status": "final"

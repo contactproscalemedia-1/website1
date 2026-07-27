@@ -1,36 +1,46 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
+type TextElement = "p" | "span" | "div" | "label";
+
 type TextProps = React.HTMLAttributes<HTMLElement> & {
-  as?: keyof JSX.IntrinsicElements;
-  size?: "bodyLarge" | "body" | "small" | "caption" | "label";
-  tone?: "primary" | "secondary" | "muted";
+  as?: TextElement;
+  size?: "xs" | "sm" | "md" | "lg" | "bodyLarge";
+  tone?: "default" | "muted" | "subtle" | "secondary";
 };
 
 const sizeClassMap = {
-  bodyLarge: "text-body-large leading-[1.6]",
-  body: "text-body leading-[1.7]",
-  small: "text-small leading-[1.5]",
-  caption: "text-caption leading-[1.4] tracking-[0.02em]",
-  label: "text-label leading-[1.4] tracking-[0.02em]",
+  xs: "text-xs",
+  sm: "text-sm",
+  md: "text-base",
+  lg: "text-lg",
+  bodyLarge: "text-lg leading-relaxed sm:text-xl",
 };
 
 const toneClassMap = {
-  primary: "text-text-primary",
-  secondary: "text-text-secondary",
-  muted: "text-text-muted",
+  default: "text-white",
+  muted: "text-white/70",
+  subtle: "text-white/50",
+  secondary: "text-white/70",
 };
 
 export function Text({
   as: Component = "p",
-  size = "body",
-  tone = "primary",
+  size = "md",
+  tone = "default",
   className,
   children,
   ...props
 }: TextProps) {
   return (
-    <Component className={cn(sizeClassMap[size], toneClassMap[tone], className)} {...props}>
+    <Component
+      className={cn(
+        sizeClassMap[size],
+        toneClassMap[tone],
+        className
+      )}
+      {...props}
+    >
       {children}
     </Component>
   );

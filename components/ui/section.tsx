@@ -1,26 +1,37 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
+type SectionElement = "section" | "div" | "main" | "article";
+
 type SectionProps = React.HTMLAttributes<HTMLElement> & {
-  as?: keyof JSX.IntrinsicElements;
-  spacing?: "default" | "tight" | "loose";
+  as?: SectionElement;
+  spacing?: "none" | "sm" | "md" | "lg" | "xl";
 };
 
 const spacingClassMap = {
-  default: "py-16 sm:py-20 lg:py-24",
-  tight: "py-10 sm:py-14",
-  loose: "py-24 sm:py-28 lg:py-32",
+  none: "",
+  sm: "py-12 sm:py-16",
+  md: "py-16 sm:py-24",
+  lg: "py-24 sm:py-32",
+  xl: "py-32 sm:py-40",
 };
 
 export function Section({
   as: Component = "section",
-  spacing = "default",
+  spacing = "lg",
   className,
   children,
   ...props
 }: SectionProps) {
   return (
-    <Component className={cn("relative w-full", spacingClassMap[spacing], className)} {...props}>
+    <Component
+      className={cn(
+        "relative w-full",
+        spacingClassMap[spacing],
+        className
+      )}
+      {...props}
+    >
       {children}
     </Component>
   );

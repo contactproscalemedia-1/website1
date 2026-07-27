@@ -14,30 +14,32 @@ const supportingLines = ["Attention is visible.", "Business impact is measurable
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion();
-  const [animationComplete, setAnimationComplete] = useState(false);
+  const [animationComplete, setAnimationComplete] = useState(
+  prefersReducedMotion === true
+);
 
   useEffect(() => {
-    if (prefersReducedMotion) {
+  if (prefersReducedMotion) {
+    return;
+  }
+
+  const handleScroll = () => {
+    if (window.scrollY > 24) {
       setAnimationComplete(true);
-      return;
     }
+  };
 
-    const handleScroll = () => {
-      if (window.scrollY > 24) {
-        setAnimationComplete(true);
-      }
-    };
+  window.addEventListener("scroll", handleScroll, { passive: true });
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    const timeout = window.setTimeout(() => {
-      setAnimationComplete(true);
-    }, 1400);
+  const timeout = window.setTimeout(() => {
+    setAnimationComplete(true);
+  }, 1400);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.clearTimeout(timeout);
-    };
-  }, [prefersReducedMotion]);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    window.clearTimeout(timeout);
+  };
+}, [prefersReducedMotion]);
 
   return (
     <section className="relative isolate flex min-h-screen flex-col justify-center overflow-hidden bg-background px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
@@ -55,7 +57,7 @@ export function Hero() {
                 key={word}
                 initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
                 animate={animationComplete || prefersReducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-                transition={{ duration: prefersReducedMotion ? 0 : 0.6, delay: prefersReducedMotion ? 0 : index * 0.08, ease: "var(--ease-verdict)" }}
+                transition={{ duration: prefersReducedMotion ? 0 : 0.6, delay: prefersReducedMotion ? 0 : index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 className="block"
               >
                 {word}

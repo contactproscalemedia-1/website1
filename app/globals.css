@@ -1,15 +1,49 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/utilities.css";
 
 @theme inline {
-  --color-surface: #0a0a0a;
-  --color-card: #111111;
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-brand: #e8152a;
-  --color-brand-dim: rgba(232, 21, 42, 0.1);
-  --color-muted: rgba(255, 255, 255, 0.5);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), sans-serif;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-bebas-neue), sans-serif;
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent-red: var(--color-accent-red);
+  --color-brand: var(--color-brand);
+  --color-brand-dim: var(--color-brand-dim);
+  --color-muted: var(--color-muted);
+  --color-card: var(--color-card);
+  --color-border: var(--color-border);
+  --color-divider: var(--color-divider);
+  --color-focus-ring: var(--color-focus-ring);
+
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
+  --spacing-9: var(--space-9);
+  --spacing-10: var(--space-10);
+  --spacing-11: var(--space-11);
+  --spacing-12: var(--space-12);
+
+  --radius-0: var(--radius-0);
+  --radius-4: var(--radius-4);
+  --radius-8: var(--radius-8);
+  --radius-12: var(--radius-12);
+
+  --container-xs: var(--container-xs);
+  --container-sm: var(--container-sm);
+  --container-md: var(--container-md);
+  --container-lg: var(--container-lg);
+  --container-xl: var(--container-xl);
 
   --animate-marquee: marquee 35s linear infinite;
   --animate-pulse-dot: pulse-dot 2s infinite;
@@ -184,6 +218,8 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--color-background);
+  color: var(--color-text-primary);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -200,14 +236,40 @@ html {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ease-verdict: linear;
+    --ease-cut: linear;
+    --ease-neutral: linear;
+  }
+}
+
 body {
-  background: #000;
-  color: #fff;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: var(--leading-body);
 }
 
 ::selection {
-  background: #e8152a;
-  color: #fff;
+  background: var(--color-accent-red);
+  color: var(--color-text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: var(--color-accent-red);
+  color: var(--color-text-primary);
 }
 
 .premium-nav {

@@ -1,0 +1,92 @@
+:root {
+  --color-background: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-elevated: #111111;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.78);
+  --color-text-muted: rgba(255, 255, 255, 0.54);
+  --color-accent-red: #e8152a;
+  --color-brand: #e8152a;
+  --color-brand-dim: rgba(232, 21, 42, 0.16);
+  --color-muted: rgba(255, 255, 255, 0.54);
+  --color-card: #111111;
+  --color-border: rgba(255, 255, 255, 0.16);
+  --color-divider: rgba(255, 255, 255, 0.1);
+  --color-focus-ring: #ffffff;
+
+  --font-display: var(--font-bebas-neue), sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --text-display-xl: clamp(3.5rem, 6vw, 8rem);
+  --text-display-l: clamp(2.5rem, 4.5vw, 4.5rem);
+  --text-display-m: clamp(2rem, 3.2vw, 2.75rem);
+  --text-heading: clamp(1.5rem, 2.5vw, 2rem);
+  --text-body-large: 1.25rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+  --text-label: 0.8125rem;
+
+  --leading-display: 0.9;
+  --leading-heading: 1.1;
+  --leading-body: 1.7;
+  --leading-small: 1.5;
+  --leading-caption: 1.4;
+
+  --tracking-display: 0.02em;
+  --tracking-heading: -0.01em;
+  --tracking-body: 0;
+  --tracking-small: 0.01em;
+  --tracking-caption: 0.02em;
+  --tracking-label: 0.02em;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 12rem;
+  --space-12: 16rem;
+
+  --container-xs: 20rem;
+  --container-sm: 32rem;
+  --container-md: 48rem;
+  --container-lg: 64rem;
+  --container-xl: 80rem;
+  --container-full: 100%;
+
+  --radius-0: 0;
+  --radius-4: 0.25rem;
+  --radius-8: 0.5rem;
+  --radius-12: 0.75rem;
+
+  --border-default: 1px solid var(--color-border);
+  --border-strong: 1px solid rgba(255, 255, 255, 0.24);
+  --border-divider: 1px solid var(--color-divider);
+
+  --elevation-subtle: 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  --opacity-disabled: 0.45;
+  --opacity-muted: 0.7;
+  --opacity-overlay: 0.82;
+
+  --ease-verdict: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-cut: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-neutral: cubic-bezier(0.33, 1, 0.68, 1);
+  --dur-tap: 100ms;
+  --dur-hover: 180ms;
+  --dur-reveal: 600ms;
+  --dur-room: 800ms;
+  --dur-opening: 1200ms;
+
+  --z-nav: 1000;
+  --z-overlay: 1100;
+  --z-modal: 1200;
+  --z-toast: 1300;
+  --z-tooltip: 1400;
+}
